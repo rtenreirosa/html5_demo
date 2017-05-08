@@ -1,0 +1,39 @@
+/*
+    Created on : May 8, 2017, 8:47:45 AM
+    Author     : rtenreis
+*/
+
+body {
+  background: #9aae04;
+  background: rgb(154,174,4);
+  margin: 0px auto;
+}
+.container{
+  margin: 0 auto;
+  width: 1200px;
+}
+header {
+  background: white;
+  height: 220px;
+}
+nav {
+  background: black;
+  height: 60px;
+}
+article {
+  background: white;
+  height: 400px;
+}
+section {
+  width: 560px;
+  float: left;
+}
+aside {
+  background: #eaeaea;
+  width: 200px;
+  float: right;
+}
+footer {
+  background: black;
+  height: 60px;
+}
