@@ -1,23 +1,95 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cenas #1</title>
+    <title>Demo #1</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet" type="text/css"/>
+    <script src="script/home.js" type="text/javascript"></script>
   </head>
   <body>
-    <header class="container">Cabeçalho</header>
-    <nav class="container">TODO write content</nav>
+    <header class="container">HTML5 Demo</header>
+    <nav class="container">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="responsive.html">responsive</a></li>
+        <li><a href="storage.html">storage</a></li>
+        <li><a href="hardware.html">hardware</a></li>
+        <li><a href="realtime.html">realtime</a></li>
+        <li><a href="media.html">media</a></li>
+      </ul>
+    </nav>
     <article class="container">
-      <h1>Título do Artigo</h1>
+      <h1>Semantics & Markup</h1>
       <section>
-        <h2>Título da Seção do Artigo</h2>
-        <p>Este é a descrição do artigo</p>
-        <div>Este é a descrição do artigo</div>
+        <h2>Better semantic tags</h2>
+        <pre>
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;hgroup&gt;
+      &lt;h1&gt;Page title&lt;/h1&gt;
+      &lt;h2&gt;Page subtitle&lt;/h2&gt;
+    &lt;/hgroup&gt;
+  &lt;/header&gt;
+
+  &lt;nav&gt;
+   &lt;ul&gt;
+     Navigation...
+   &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;section&gt;
+   &lt;article&gt;
+     &lt;header&gt;
+       &lt;h1&gt;Title&lt;/h1&gt;
+     &lt;/header&gt;
+     &lt;section&gt;
+       Content...
+     &lt;/section&gt;
+   &lt;/article&gt;
+   &lt;article&gt;
+     &lt;header&gt;
+       &lt;h1&gt;Title&lt;/h1&gt;
+     &lt;/header&gt;
+     &lt;section&gt;
+       Content...
+     &lt;/section&gt;
+   &lt;/article&gt;
+  &lt;/section&gt;
+
+  &lt;aside&gt;
+   Top links...
+  &lt;/aside&gt;
+
+  &lt;figure&gt;
+    &lt;img src="..."/&gt;
+    &lt;figcaption&gt;Chart 1.1&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;footer&gt;
+   Copyright ©
+   &lt;time datetime="2010-11-08"&gt;2010&lt;/time&gt;.
+  &lt;/footer&gt;
+&lt;/body&gt;
+        </pre>
       </section>
-      <aside>Conteúdo ao lado do artigo</aside>
+      <aside>
+        <figure>
+          <div>
+            <img src="imgs/web.jpg" alt="Web"/>
+          </div>
+          <figcaption>Image 1</figcaption>
+        </figure>
+        <figure>
+          <div class="img-hover">
+            <img src="imgs/web.jpg" alt="Web"/>
+          </div>
+          <figcaption>Image 2</figcaption>
+        </figure>
+      </aside>
     </article>
-    <footer class="container">rodapé</footer>
+    <footer class="container">
+      Validate this page at <a id="w3c" href="https://validator.w3.org/nu/?doc=">w3c markup validation</a>
+    </footer>
   </body>
 </html>
